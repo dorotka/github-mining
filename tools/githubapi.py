@@ -3,7 +3,7 @@
 from base64 import b64encode
 from urllib.request import Request, urlopen
 
-token = '08a571561afba49f3fd31636c6a419d10f61fe6c'
+token = '######'
 auth = 'Basic ' + b64encode('{}:x-oauth-basic'.format(token).encode()).decode('ascii')
 
 def giturlopen(url):
