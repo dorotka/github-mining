@@ -22,34 +22,30 @@ These instructions will get you a copy of the project up and running on your loc
 
 * Python3
 
-```
-example
-```
+### Script Order:
 
-###SCRIPT ORDER:
-
-1.load_repos.py
+1. load_repos.py
 - Script clones selected repositories to the repos folder
 
-2.download_issues.py -u <owner> <project>
+2. download_issues.py -u <owner> <project>
 - Script must be run for each repository. It may take up to 30 min per repository.
 
-3.labels.py -u <owner> <project>
+3. labels.py -u <owner> <project>
 - Script must be run for each repository.
 
-4.setup_fixes.py
+4. setup_fixes.py
 - Script must be run once. It runs each of the below scripts on every repository:
 	* extract_bugs.py
 	* extract_commits.py
 	* extract_fixes.py
 
-5.extract_buggy_commits.py <project>
+5. extract_buggy_commits.py <project>
 - Script must be run for each repository. It may take up to 30 min per repository.
 
-6.annotate_commits.py <project>
+6. annotate_commits.py <project>
 - Script must be run for each repository. It may take up to 30 min per repository.
 
-7.get_devs.py
+7. get_devs.py
 - Script must be run once. It runs each of the following scripts:
 	* prepare_devs.py (for each repository)
 	* combine.py
@@ -57,7 +53,7 @@ example
 8.analyze_focus.py
 - Script must be run once.
 
-###TO RUN VISUALIZATIONS:
+### To run visualizations:
 
 If the submission was made without the data, you need to copy the following data files to the tools/visualization/data directory:
 * toosl/data/authors_ratio.json
@@ -77,13 +73,14 @@ Further instructions are included in each html file under tools/visualization.
 ```
 export PYTHONPATH=“<location of the folder>/tools:$PYTHONPATH"
 ```
+or using the [StackOverflow instructions](https://stackoverflow.com/questions/3402168/permanently-add-a-directory-to-pythonpath)
 * Run test scripts from tools folder as specified in the scripts usage:
 ```
 python3 tests/<test_script>.py
 ```
 * In order to run the tests, you need to have the test data. You need to run the scripts with test flag set to True in order to create the test data. By default test flag is set to False.
 
-Test cases documentation is included in [the specs] (documentation/GFA_Specs_v4.pdf)
+Test cases documentation is included in [the specs](documentation/GFA_Specs_v4.pdf)
 
 ## Built With
 
