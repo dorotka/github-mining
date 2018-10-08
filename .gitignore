@@ -7,6 +7,7 @@ tools/github-debug.log
 tools/github-error-*
 tools/github-debug-*
 tools/.idea
+tools/.idea/*
 tools/.idea/workspace.xml
 tools/venv-test
 Tools/data/_sentry
@@ -17,3 +18,4 @@ Tools/data/_guava
 tools/data/
 tools/data/test/
 tools/data/*
+tools/config.py
