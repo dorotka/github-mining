@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Submission</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+        	body{
+        		font-family: Helvetica, Arial, sans-serif;
+        	}
+        </style>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		<h1>Are good developers more focused? Data-mining GitHub.</h1>
+		<h2>Submission List</h2>
+        <article>
+        	<header>Folder structure:</header>
+        	<ol>
+        		<li>Articles - related works
+                    <ul>
+                        <li><a href="https://dl.acm.org/citation.cfm?doid=3152284.3133908">DejaVu</a></li>
+                        <li><a href="https://ieeexplore.ieee.org/document/6606591/">Dual Ecolofical Measures of Focus</a></li>
+                        <li><a href="https://dl.acm.org/citation.cfm?id=1083147">When do Changes Induce Fixes</a></li>
+                        <li><a href="https://dl.acm.org/citation.cfm?id=2597074">The Promises and Perils of Mining GitHub</a></li>
+                        <li><a href="https://ieeexplore.ieee.org/document/7886974/">The Sky is Not the Limit: Multitasking Across GitHub Projects</a></li>
+                        <li><a href="https://www.researchgate.net/publication/258316465_StackOverflow_and_GitHub_Associations_Between_Software_Development_and_Crowdsourced_Knowledge?enrichId=rgreq-38291a80de2559ca7e6ab7c2bb44febc-XXX&enrichSource=Y292ZXJQYWdlOzI1ODMxNjQ2NTtBUzoxMDM1MzU1NDI4MDA0MDFAMTQwMTY5NjIwNTk0OA%3D%3D&el=1_x_3&_esc=publicationCoverPdf">StackOverflow and GitHub: Associations Between Software Development and Crowdsourced Knowledge</a></li>
+                    </ul>
+                </li>
+        		<li>
+        			<a href="documentation">Documentation folder</a>
+					<ul>
+		        		<li><a href="documentation/GFA_Specs_v4.pdf">Spec Document</a> - Technical Specs</li>
+		        		<li><a href="documentation/Repositories-Criteria.pdf">Repositories Criteria</a> - the repo characteristics considered when selecting repositories for the project</li>
+		        		<li><a href="documentation/Repositories-Selected.pdf">Selected Repositories</a></li>
+		        		<li>
+		        			<a href="documentation/Repositories-Considered.pdf">Repositories considered for selection</a> - list of the repositories considered for selection with their characteristics
+		        		</li>
+		        	</ul>
+        		</li>
+        		<li>
+        			Tools folder:
+        			<ul>
+		        		<li><a href="tools/instructions.txt">instructions.txt</a> - a file that describes the prerequisites and the order in which scripts should be run</li>
+        				<li>
+        					<a href="tools">python scripts</a> for extracting and analyzing data. 
+        					They are all described in the <a href="documentation/GFA_Specs_v4.pdf">Spec Document</a>, and they contain in-file documentation. 
+        					To see the order they need to be run in, check <a href="tools/instructions.txt">instructions.txt</a>
+        				</li>
+		        		<li><a href="tools/tests">tests</a> - contains test scripts</li>
+		        		<li>
+			        		<a href="tools/data">data folder</a> - contains research data
+			        		<ul>
+			        			<li>json files - combined data for all the repositories</li>
+			        			<li><a href="tools/data/test">test folder</a> - folder for test data for scripts that are run on the combined data from all the repositories</li>
+			        			<li><a href="tools/data/ansible">ansible data</a> - research data for ansible</li>
+			        			<li><a href="tools/data/bitcoin">bitcoin data</a> - research data for bitcoin</li>
+			        			<li><a href="tools/data/elasticsearch">elasticsearch data</a> - research  data for elasticsearch</li>
+			        			<li><a href="tools/data/rails">rails data</a> - research data for rails</li>
+			        			<li><a href="tools/data/rust">rust data</a> - research data for rust</li>
+			        			<li><a href="tools/data/selenium">selenium data</a> - research data for selenium</li>
+			        			<li><a href="tools/data/servo">servo data</a> - research data for servo</li>
+			        			<li><a href="tools/data/spring-boot">spring-boot data</a> - research data for spring-boot</li>
+			        			<li><a href="tools/data/symfony">symfony data</a> - research data for symfony</li>
+			        			<li><a href="tools/data/typescript">typescript data</a> - research data for typescript</li>
+			        		</ul>
+			        	</li>
+		        		<li><a href="tools/repos">repos folder</a> - empty folder where the repositories should be cloned (check <a href="tools/instructions.txt">instructions.txt</a>)</li>
+		        		<li>
+		        			Visualization folder
+		        			<ul>
+		        				<li><a href="tools/visualization/developers-focus.html">developers-focus.html</a> - page to visualize the focus analysis results</li>
+		        				<li><a href="tools/visualization/developers.html">developers.html</a> - page to visualize the inserted (good and buggy) lines of every devleoper in a selected repository</li>
+		        				<li><a href="tools/visualization/developers_ratios.html">developers_ratios.html</a> - page to visualize the ratios of every devleoper</li>
+		        				<li>
+                                    <a href="tools/visualization/charts">charts folder</a> - contains pdf of the focus charts
+                                    <ul>
+                                        <li><a href="tools/visualization/charts/developers-focus.pdf">static focus charts</a></li>
+                                    </ul>
+                                </li>
+		        				<li><a href="tools/visualization/data">data folder</a> - contains data to be visualized</li>
+		        				<li><a href="tools/visualization/scripts">scripts folder</a> - contains js scripts for visualization</li>
+		        			</ul>
+		        		</li>
+		        	</ul>
+        		</li>
+        	</ol>
+        </article>
+        <article>
+        	<header>What is not included in the submission:</header>
+        	<ol>
+        		<li>Cloned repositories (see <a href="tools/instructions.txt">instructions.txt</a>)</li>
+                <li>Test data under data/&lt;repo&gt;/test/ and data/test/ (Run all the scripts with test flag set to True according to the <a href="tools/instructions.txt">instructions.txt</a> to get the test data)</li>
+                <li>Issues data under data/&lt;repo&gt;/issues.json. To get issues data run download_issues.py for each repo according to the <a href="tools/instructions.txt">instructions.txt</a></li>
+        	</ol>
+        </article>
+        <article>
+            <p>
+                <strong>Full data can be accessed via Google Drive link:</strong> 
+                <a href="https://drive.google.com/file/d/1gmIU8xEbUeA70pn3Sp0-rzIuwc5v7qHN/view?usp=sharing">data.zip</a>
+                <br>
+                It contains zipped data folder (843.6 MB). <br>
+                To download the data: 
+                <ul>
+                    <li>Click on the link <a href="https://drive.google.com/file/d/1gmIU8xEbUeA70pn3Sp0-rzIuwc5v7qHN/view?usp=sharing">data.zip</a>. It will not be able to display preview since it's a zip file.</li>
+                    <li>Click "download"</li>
+                    <li>Google may display a warning that it cannot scan the file because of the size. It is safe, please click "Download anyway" button.</li>
+                </ul>
+                <strong>Hash:</strong> <span>MD5 (data.zip) = e16e61a6b60c00c920f63ef02f1b0c65</span>
+            </p>
+            Author: Dorota Oleszczuk (do276)
+        </article>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    </body>
+</html>

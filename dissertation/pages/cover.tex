@@ -1,0 +1,43 @@
+\author{Dorota Oleszczuk}
+\title{Are Good Developers More Focused? Data-Mining GitHub}
+
+\begin{titlepage}
+  % HACK for two-sided documents: ignore binding correction for cover page.
+  % Adapted from Markus Kohm's KOMA-Script titlepage=firstiscover handling.
+  % See http://mirrors.ctan.org/macros/latex/contrib/koma-script/scrkernel-title.dtx,
+  % \maketitle macro.
+  \oddsidemargin=\evensidemargin\relax
+  \textwidth=\dimexpr\paperwidth-2\evensidemargin-2in\relax
+  \hsize=\textwidth\relax
+
+  \centering
+
+  \vspace{5mm}
+%   {\huge\MakeUppercase{\getFaculty{}}}\\
+
+  \vspace{5mm}
+  {\large\MakeUppercase{University of Kent}}\\
+
+  \vspace{20mm}
+
+  \vspace{15mm}
+   \makeatletter
+  \vspace{15mm}
+  \ifthenelse{\pdf@strcmp{\languagename}{english}=0}
+  {
+  {\huge\bfseries \@title}
+
+  \vspace{10mm}
+  }
+  \makeatother
+
+
+  \vspace{15mm}
+  \begin{tabular}{l l}
+    Author:          & \@author \\
+    Supervisor:      & {Radu Grigore} \\
+    Submission Date: & {September 9, 2018} \\
+  \end{tabular}
+
+
+\end{titlepage}

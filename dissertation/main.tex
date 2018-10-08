@@ -1,0 +1,67 @@
+\RequirePackage[l2tabu,orthodox]{nag}
+
+% TODO: decide if one-sided/two-sided
+%\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
+\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
+
+% TODO: change citation style in settings
+\input{settings}
+
+% TODO: change thesis information
+\newcommand*{\getUniversity}{University of Kent}
+\newcommand*{\getFaculty}{School of Computing}
+\newcommand*{\getTitle}{Are Good Developers More Focused? Data-Mining GitHub}
+\newcommand*{\getAuthor}{Dorota Oleszczuk}
+\newcommand*{\getDoctype}{Master's Dissertation}
+\newcommand*{\getSupervisor}{Radu Grigore}
+\newcommand*{\getSubmissionDate}{September 9, 2018}
+\newcommand*{\getSubmissionLocation}{Canterbury}
+
+\begin{document}
+
+\selectlanguage{english}
+
+% Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
+% (see https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Problems_with_Links_and_Pages).
+\pagenumbering{alph}
+\input{pages/cover}
+
+\frontmatter{}
+
+\input{pages/disclaimer}
+\input{pages/title}
+\input{pages/acknowledgements}
+\input{pages/abstract}
+\microtypesetup{protrusion=false}
+\tableofcontents{}
+\microtypesetup{protrusion=true}
+
+\microtypesetup{protrusion=false}
+\listoffigures{}
+\listoftables{}
+\microtypesetup{protrusion=true}
+% \printglossaries
+
+\mainmatter{}
+
+\input{chapters/01_introduction}
+\input{chapters/02_background}
+\input{chapters/03_prior_work}
+\input{chapters/04_methods}
+\input{chapters/05_threats}
+\input{chapters/06_results}
+\input{chapters/07_implications}
+\input{chapters/08_future}
+\input{chapters/09_conclusions}
+% TODO: add more chapters here
+
+\appendix{}
+
+\printbibliography{}
+
+% TODO: appendix chapter
+\input{pages/appendix}
+
+
+
+\end{document}

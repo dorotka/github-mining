@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <h1>Developers <span id="repo"></span></h1>
+        <h3 class="instructions">
+            Please choose the authors.json file for the repository of your choice. You can find the file under tools/data/&lt;repo&gt;/authors.json location.
+        </h3>
+        <article>
+            <p>
+                The first graph will depict developers and the number od their inserted lines sorted by that number.
+            </p>
+            <p>
+                The remaining graphs show number of good and buggy lines introduced by each developer over the course of the 4 years analysied in the project. Each of those graphs may be zoomed in to see the details. Next to the developer's email is the buggy ratio.
+            </p>
+        </article>
+        
+        <div id="buttons"></div>
+        <div id="developers" style="width: 1000px; height: 2500px;"></div>
+        <div id="container" style="width: 800px; height: 500px;"></div>
+        <div id="per_dev"></div>
+		
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+        <script src="https://code.highcharts.com/highcharts.src.js"></script>
+        <script src="scripts/developers.js"></script>
+    </body>
+</html>

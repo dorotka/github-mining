@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <div class="instructions">
+            <h3>Instructions</h3>
+            <p>
+                In order to view the graphs, you need to run this page on a local server.
+                One easy was to set up the local server is by using npm.
+            </p>
+            <ol>
+                <li>Install Node and npm: <code>npm install npm@latest -g</code>
+                    &nbsp;&nbsp;
+                    <a href="https://www.npmjs.com/get-npm">instructions</a>
+                </li>
+                <li>Install http-server : <code>npm install http-server -g</code>
+                    &nbsp;&nbsp;
+                    <a href="https://www.npmjs.com/package/http-server">instructions</a>
+                </li>
+                <li>
+                    Start the server: <code>http-server</code>
+                </li>
+            </ol>
+            <p>If you are unable to set up your local server, you can see the static charts <a href="charts/developers-focus.pdf">here</a></p>
+        </div>
+        <h2>Focus Analysis</h2>
+        <h3>Focus over 4 years</h3>
+        <div id="overall" style="height: 700px;"></div>
+        <div id="all"></div>
+        <div id="ranges"></div>
+        <h3>Focus per year</h3>
+        <div id="yearly"></div>
+        <div id="per_year_2014"></div>
+        <div id="per_year_2015"></div>
+        <div id="per_year_2016"></div>
+        <div id="per_year_2017"></div>
+        <!-- <div id="yearly-good"></div> -->
+        <h3>Daily Focus</h3>
+        <div id="daily-good"></div>
+        <!-- <div id="yearly-bad"></div> -->
+        <div id="daily-bad"></div>
+        <h3>Focus per developer-extension pair</h3>
+        <div id="ext_distr"></div>
+        <h3>Focus for the most popular extensions</h3>
+        <div id="exts"></div>
+        <h3>Focus for the most popular extensions - Logarithmic y axis</h3>
+        <div id="exts_log"></div>
+        <div id="ext_popular"></div>
+        
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        
+        <script src="https://code.highcharts.com/highcharts.src.js"></script>
+        <script src="scripts/developers_focus.js"></script>
+    </body>
+</html>

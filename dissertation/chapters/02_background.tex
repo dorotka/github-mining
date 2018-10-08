@@ -1,0 +1,74 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\chapter{Background}\label{chapter:background}
+
+Since the rise of GitHub’s popularity, the abundance of information that became available allowed researchers to examine programmers’ qualities and behaviors. As of 2018, GitHub contains over 85M repositories with over 28M contributors~\parencite{github} and hosts many large OSS projects like Linux Kernel or Microsoft’s Typescript. This research uses commits data together with the GitHub issues database to analyze focus of \textit{good developers}. \par
+
+The question of what constitutes a \textit{good developer} has never been easy to answer and it often sparked disputes due to many characteristics of a \textit{good programmer} being subjective and context-dependent. One of the more obvious ways to measure developer’s quality is looking at her bug-introduction ratio. It is logical to expect \textit{good developers} to introduce fewer defects in their code. It is not the ultimate criterion, but it is a decent estimation of developers’ quality, which may be assessed based on their committing behavior and the defect database for the project. That was the approach used in multiple previous research works\parencite{Izquierdo-Cortazar,Sliwerski,tsunoda,posnett}, and the one used in this paper. Using this method, I found that the majority of developers were \textit{good}. So what does make \textit{good developers} introduce fewer bugs? In this paper, I examine one of the characteristics believed to affect developers’ quality— their focus—in an attempt to answer the question: \par
+
+\vspace{5mm}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+        \textbf{Goal:} Are \textit{good developers} more focused?
+    }%
+}
+\vspace{2mm}
+
+Despite the recent drive towards specialization, developers possess skills in multiple technologies, which encourages them to contribute to many parts of the project they work on, or even to multiple projects. Switching between different technologies and coding styles bears a mental burden that may impair code quality. Focused developers are expected to provide better code\parencite{posnett}. \par
+
+There are many ways to measure a developer’s focus. One can analyze switching between files, packages, programming languages, or even specific functions within files. In this research, focus was measured based on the extensions worked on within a period of time. Analyzing focus based on switching between files may be too strict. For example, a developer who worked on multiple files would be described as not focused, even if those files were related and used the same technology. Analysis based on the programming language may be too broad because projects are often written using mainly one programming language; therefore, most programmers would be classified as focused. Analysis of focus based on the extensions, however, is the middle ground between the two. If a developer worked on five .java files during the day, she was described as focused; meanwhile, a developer working on two .java, two .jsp, and an .xml config file, would be characterized by lack of focus. \par
+
+A focused developer does not have to exclusively stick to a single technology. She may work on a specific technology over a day, a week, or a month, but she may utilize various technologies throughout her career as a programmer; or she may indeed specialize exclusively in one technology and the high level of focus may be what makes her contribute better quality code. In order to examine the duration of focus for \textit{good developers}, this paper analyzed focus over different time periods: \par
+
+\vspace{5mm}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+        \textbf{RQ 1:} Are \textit{good developers} more focused all the time or does the focus level differ over various time periods?
+    }%
+}
+\vspace{2mm}
+
+To answer RQ1, focus was examined on a daily-, weekly-, and yearly-basis, as well as over a period of four years, which was the full period of the gathered data. \par
+
+To further understand developers’ focus, their daily focus was compared with their weekly focus. Developers’ daily focus may be dictated by the work done on previous days—what a developer focuses on on a Tuesday may depend on what she worked on on Monday. On the other hand, the technologies a developer works on each day may be independent. To investigate the behaviors of \textit{good developers}, the following question was examined: \par
+
+\vspace{5mm}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+        \textbf{RQ 2:} Are developers’ daily tasks within each week dependent on each other?
+    }%
+}
+\vspace{2mm}
+
+This paper examines focus in two ways. 1) Focus is analyzed \textit{across} technologies, and over different time periods. This approach was covered in RQ1 and RQ2. 2) Focus for \textit{each extension} is examined over active days. The second approach is used to answer the two following research questions. To explore the relationship between developers’ focus and specific extensions, this research investigated: \par
+
+\vspace{5mm}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+        \textbf{RQ 3:} Are \textit{good developers} more focused when working on the most popular extensions?
+    }%
+}
+\vspace{2mm}
+
+To answer this question, the paper found the most popular extensions and analyzed focus of each developer group per each popular extension. There are many reasons why developers work on multiple file extensions within a day. It may be dictated by technical dependencies, the developer’s interests, or a simple need to work on multiple technologies to increase productivity. If a large difference between the level of focus between \textit{good} and \textit{bad developers} is discovered, it may provide valuable feedback for programming language creators. It could also be an indication that in order to improve code quality, all developers should focus on such technologies. Continuing this idea, the paper explored the question: \par
+
+\vspace{5mm}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+        \textbf{RQ4:} Which extensions do \textit{good developers} focus on the most?
+    }%
+}
+\vspace{2mm}
+
+Here I attempted to discover the technologies that \textit{good developers} focus their attention on the most. The results were compared for \textit{good} and \textit{bad developers} to investigate whether there are any technologies where the difference in focus is the largest. \par
+
+Understanding how \textit{good developers} work and interact with technologies can be very beneficial for the development community. Empirical Software Engineering is a field concerned with the analysis of  software development practices, and technologies. In this paper, I attempt to contribute to the field of Empirical Software Engineering by answering the question of whether \textit{good developers} are more focused.
+% * <dorota_oleszczuk@yahoo.com> 2018-09-05T21:58:54.991Z:
+% 
+% > Empirical Software Engineering is a field concerned with the analysis of  software development practices, and technologies.
+% This could be expanded.
+% 
+% ^.
+
+

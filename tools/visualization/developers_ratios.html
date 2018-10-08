@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <h1>Developers Ratios <span id="repo"></span></h1>
+        <h3 class="instructions">
+            It may take a minute to load all the graphs. Please be patient.
+        </h3>
+        <article>
+            <p>
+                In order to view the graphs, you need to run this page on a local server.
+                One easy was to set up the local server is by using npm.
+            </p>
+            <ol>
+                <li>Install Node and npm: <code>npm install npm@latest -g</code>
+                    &nbsp;&nbsp;
+                    <a href="https://www.npmjs.com/get-npm">instructions</a>
+                </li>
+                <li>Install http-server : <code>npm install http-server -g</code>
+                    &nbsp;&nbsp;
+                    <a href="https://www.npmjs.com/package/http-server">instructions</a>
+                </li>
+                <li>
+                    Start the server: <code>http-server</code>
+                </li>
+            </ol>
+            <p>
+                The graphs depict the number of good lines versus buggy lines for each developer in the repository. Also Average Daily Ratio and the overall ratio is added below each graph.
+            </p>
+        </article>
+        <h2>Line Ratios</h2>
+        <div id="lines">
+            <div id="dev_line_daily" style="margin-bottom: 20px; font-family: Arial, Helvetica, sans-serif; "></div>
+            <div id="dev_line" style="width: 320px; height: 320px; float: left; margin-bottom: 60px;"></div>
+            <div id="per_dev"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+        <script src="https://code.highcharts.com/highcharts.src.js"></script>
+        <script src="scripts/developers_ratios.js"></script>
+    </body>
+</html>

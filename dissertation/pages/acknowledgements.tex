@@ -1,0 +1,20 @@
+\makeatletter
+\ifthenelse{\pdf@strcmp{\languagename}{english}=0}
+{\addcontentsline{toc}{chapter}{Acknowledgments}}
+\makeatother
+\thispagestyle{empty}
+
+\vspace*{20mm}
+
+\begin{center}
+\makeatletter
+\ifthenelse{\pdf@strcmp{\languagename}{english}=0}
+{\usekomafont{section} Acknowledgments}
+\makeatother
+\end{center}
+
+\vspace{10mm}
+
+I am grateful to Dr. Radu Grigore for his support and for sharing his implementations of the GitHub mining code which served as an example for this research. I also thank the DejaVu team for providing additional information and support for the DejaVu tool.
+
+\cleardoublepage{}
