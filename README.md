@@ -1,6 +1,6 @@
 # github-mining
 
-The github-mining project contains a series of scripts that save and analyze data for the predefined repositories in order to analyze developers’ focus.
+The github-mining is my Master's project. It contains a series of scripts that save and analyze data for the predefined repositories in order to analyze developers’ focus.
 It was created to download the information used in the ​'Are Good Developers More Focused?' D​issertation included under dissertation folder.
 
 ## Getting Started
@@ -86,4 +86,6 @@ Test cases documentation is included in [the specs](documentation/GFA_Specs_v4.p
 
 * [Python3](https://www.python.org/download/releases/3.0/)
 * [GitHub API](https://developer.github.com/v3/)
+* Javascript
+* [HighCharts](https://www.highcharts.com/)
 
